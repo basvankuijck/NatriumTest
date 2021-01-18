@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   s.frameworks    = 'Foundation'
   s.swift_versions = [ '4.2', '5.0', '5.3' ]
   s.prepare_command = <<-PREPARE_COMMAND_END
-    chmod 7777 ./Natrium/Sources/Natrium.swift
+    cp -f ./Natrium/Sources/Natrium.swift ./Natrium/Natrium.swift
+    chmod 7777 ./Natrium/Natrium.swift
   PREPARE_COMMAND_END
 end
