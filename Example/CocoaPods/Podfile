@@ -1,0 +1,19 @@
+platform :ios, '10.0'
+use_frameworks!
+inhibit_all_warnings!
+
+def install_natrium
+  pod 'Natrium', :git => 'git@github.com:basvankuijck/NatriumTest.git'
+end
+
+target :NatriumExampleProject do
+    install_natrium
+
+    target 'NatriumExampleProjectTests' do
+        inherit! :search_paths
+    end
+end
+
+target :NatriumExampleProject2 do
+    install_natrium
+end

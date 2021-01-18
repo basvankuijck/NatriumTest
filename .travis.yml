@@ -1,0 +1,11 @@
+language: objective-c
+osx_image: xcode10.2
+
+cache:
+  directories:
+  - vendor/bundle
+
+script:
+  - pod install --project-directory=./Example/CocoaPods/
+  - make build
+  - xcodebuild -workspace Example/CocoaPods/NatriumExampleProject.xcworkspace -scheme NatriumExampleProject\ \(production\) -configuration Debug -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 8' clean build test
