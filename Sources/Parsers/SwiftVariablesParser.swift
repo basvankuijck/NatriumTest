@@ -57,7 +57,7 @@ class SwiftVariablesParser: Parseable {
 
         let newContents = lines.joined(separator: "\n")
 
-        let file = File(path: FileManager.default.currentDirectoryPath + "/Natrium.swift")
+        let file = File(path: FileManager.default.currentDirectoryPath + "/Sources/Natrium.swift")
         try file.writeChanges(string: newContents)
     }
 

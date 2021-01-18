@@ -6,11 +6,10 @@ build:
 	mv ./Package.swift ./Package.local.swift; mv ./Package.swift_ ./Package.swift
 	cp .build/release/natrium Natrium/
 	chmod +x Natrium/natrium
-	mkdir -p Example/Cocoapods/Pods/Natrium
+	mkdir -p Example/Cocoapods/Pods/Natrium/Natrium/Sources
 	chmod -R 7777 Example/CocoaPods/Pods/Natrium/
-	cp Natrium/Sources/*.swift Example/CocoaPods/Pods/Natrium/
-	cp Natrium/natrium Example/CocoaPods/Pods/Natrium/
-	cp Natrium/Sources/Natrium.h Example/CocoaPods/Pods/Natrium/
+	cp Natrium/Sources/*.* Example/CocoaPods/Pods/Natrium/Natrium/Sources/
+	cp Natrium/natrium Example/CocoaPods/Pods/Natrium/Natrium/
 	rm -rf Example/CocoaPods/Pods/Natrium/Natrium.lock
 	cp Natrium/natrium Example/Manual/
 	rm -rf Example/Manual/Natrium.lock
