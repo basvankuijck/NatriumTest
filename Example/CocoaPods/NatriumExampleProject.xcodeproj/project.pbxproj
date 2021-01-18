@@ -10,6 +10,7 @@
 		2AAB132C76071CEED19740C4 /* Pods_NatriumExampleProject2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE41C81F0C08DD822728A82D /* Pods_NatriumExampleProject2.framework */; };
 		2DE7B4FAF2BB48100ECE6133 /* Pods_NatriumExampleProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3062387E327F5BE4183D7448 /* Pods_NatriumExampleProject.framework */; };
 		C310513625B59830002EA5C2 /* Natrium.swift in Sources */ = {isa = PBXBuildFile; fileRef = C310513525B59830002EA5C2 /* Natrium.swift */; };
+		C310513D25B599A8002EA5C2 /* Natrium.swift in Sources */ = {isa = PBXBuildFile; fileRef = C310513525B59830002EA5C2 /* Natrium.swift */; };
 		C34738431F9DFE8700088F26 /* file.html in Resources */ = {isa = PBXBuildFile; fileRef = C34738421F9DFE8400088F26 /* file.html */; };
 		C34738441F9DFE8700088F26 /* file.html in Resources */ = {isa = PBXBuildFile; fileRef = C34738421F9DFE8400088F26 /* file.html */; };
 		C3C2677E1FA1E64F00E17621 /* NatriumExampleProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C2677D1FA1E64F00E17621 /* NatriumExampleProjectTests.swift */; };
@@ -459,6 +460,7 @@
 			files = (
 				DF5F55E81D40D7C40010A437 /* ViewController.swift in Sources */,
 				DF5F55E91D40D7C40010A437 /* AppDelegate.swift in Sources */,
+				C310513D25B599A8002EA5C2 /* Natrium.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
