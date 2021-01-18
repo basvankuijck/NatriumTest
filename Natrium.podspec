@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.swift_versions = [ '4.2', '5.0', '5.3' ]
 
   s.prepare_command = <<-PREPARE_COMMAND_END
-    cp -f ./Natrium/natrium ./natrium
-    cp -f ./Natrium/Sources/Natrium.swift ./Natrium.swift
+    mv -f ./Natrium/natrium ./natrium
+    mv -f ./Natrium/Sources/Natrium.swift ./Natrium.swift
   PREPARE_COMMAND_END
 end
