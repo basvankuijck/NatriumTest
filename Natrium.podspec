@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
   s.prepare_command = <<-PREPARE_COMMAND_END
     mkdir -p ./bin
-    mv -f ./Natrium/natrium ./bin/natrium
-    mv ./Natrium/Natrium.swift ./Natrium.swift
+    mv ./Natrium/natrium ./bin/
+    mv ./Natrium/Natrium.swift ./
   PREPARE_COMMAND_END
 end
