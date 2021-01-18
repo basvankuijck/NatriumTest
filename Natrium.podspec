@@ -14,4 +14,9 @@ Pod::Spec.new do |s|
   s.requires_arc   = true
   s.frameworks    = 'Foundation'
   s.swift_versions = [ '4.2', '5.0', '5.3' ]
+
+  s.prepare_command = <<-PREPARE_COMMAND_END
+    mv -f ./Natrium/natrium ./run
+    mv -f ./Natrium/Sources/Natrium.swift ./Natrium.swift
+  PREPARE_COMMAND_END
 end
