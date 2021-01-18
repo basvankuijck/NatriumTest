@@ -225,7 +225,6 @@
 				DF1ED0901CE3708B00BF8F35 /* Frameworks */,
 				DF1ED0911CE3708B00BF8F35 /* Resources */,
 				DF1ED0AF1CE3745800BF8F35 /* Embed Frameworks */,
-				6AD863C176E03D207F783C86 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -245,7 +244,6 @@
 				DF5F55EA1D40D7C40010A437 /* Frameworks */,
 				DF5F55EC1D40D7C40010A437 /* Resources */,
 				C3E1D71E1F9F4A1D009C1E58 /* Embed Frameworks */,
-				5134284028AC81C7E072A9E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -396,42 +394,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5134284028AC81C7E072A9E3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NatriumExampleProject2/Pods-NatriumExampleProject2-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Natrium/Natrium.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Natrium.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NatriumExampleProject2/Pods-NatriumExampleProject2-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6AD863C176E03D207F783C86 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-NatriumExampleProject/Pods-NatriumExampleProject-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Natrium/Natrium.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Natrium.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NatriumExampleProject/Pods-NatriumExampleProject-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
